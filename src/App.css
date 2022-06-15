@@ -28,3 +28,37 @@ button {
 .hidden {
   margin: 0 auto;
 }
+
+.Matches{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Teams{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Players{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Teams table td1 {
+  border: 1px rgb(247, 243, 243);
+  padding: 1px;
+}
+
+.Teams .border {
+  border: 1px solid rgb(5, 5, 5);
+}
+.Teams table {
+  border: 1px solid rgb(5, 5, 5);
+}
+
+.Matches table {
+  border: 1px solid rgb(5, 5, 5);
+}

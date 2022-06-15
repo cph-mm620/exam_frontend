@@ -1,7 +1,12 @@
 import React from "react";
 
 const ShowHideComponent = () => {
-  return <div>ShowHideComponent</div>;
+  return (
+    <div>
+      <button className="btn" onClick={onClick}>
+        Log out
+      </button>
+    </div>
+  );
 };
-
 export default ShowHideComponent;

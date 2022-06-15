@@ -12,7 +12,6 @@ const Header = () => {
         backgroundSize: "100%",
       }}
     >
-      <img src={img} alt="JOIM Logo" />
       <h1>SportsEvents</h1>
       {/* https://www.w3schools.com/cssref/pr_background-image.asp */}
 

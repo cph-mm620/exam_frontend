@@ -11,15 +11,18 @@ import LogOut from "./components/LogOut";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp";
 import Matches from "./components/Matches";
+import Teams from "./components/Teams";
+import Players from "./components/Players";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/LogIn" element={<LogIn />}></Route>
-        <Route path="/LogOut" element={<LogOut />}></Route>
+        <Route path="/Players" element={<Players />}></Route>
         <Route path="/SignUp" element={<SignUp />}></Route>
         <Route path="/Matches" element={<Matches />}></Route>
+        <Route path="/Teams" element={<Teams />}></Route>
       </Route>
       <Route
         // default for when the link is wrong

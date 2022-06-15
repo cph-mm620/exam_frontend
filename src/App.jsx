@@ -45,11 +45,14 @@ function App() {
           <Link className="links" to="/Matches">
             Matches
           </Link>
+          <Link className="links" to="/Teams">
+            Teams
+          </Link>
+          <Link className="links" to="/Players">
+            Players
+          </Link>
           <Link className="links" to="/LogIn">
             Login
-          </Link>
-          <Link className="links" to="/LogOut">
-            Logout
           </Link>
           <Link className="links" to="/SignUp">
             Signup
@@ -62,7 +65,7 @@ function App() {
           setShowHide(!showHide);
         }}
       >
-        show hide button
+        Log Out
       </button>
       {showHide && <ShowHideComponent />}
     </div>
