@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import backgroundimg from "../images/bgsports.png";
-import {allMatches} from "../Settings";
 
 
 
