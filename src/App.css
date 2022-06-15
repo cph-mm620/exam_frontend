@@ -6,17 +6,17 @@
 nav {
   display: flex;
   justify-content: space-evenly;
-  background-color: aqua;
+  background-color: rgb(129, 167, 221);
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 nav a {
-  color: blueviolet;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   text-decoration: none;
 }
 nav a:hover {
-  color: green;
+  color: rgb(211, 212, 213);
   text-decoration: underline;
 }
 button {

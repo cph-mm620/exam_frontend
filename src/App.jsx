@@ -1,5 +1,4 @@
 import "./App.css";
-import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 import img from "./images/sportslogo.png";
@@ -32,22 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      {!dropDown && (
-        <FaAngleDown
-          className="dropDownIcon hidden"
-          onClick={(e) => {
-            setDropDown(!dropDown);
-          }}
-        />
-      )}
-      {dropDown && (
         <nav>
-          <FaAngleUp
-            className="dropDownIcon"
-            onClick={(e) => {
-              setDropDown(!dropDown);
-            }}
-          />
           <Link
             className="active links"
             onClick={(e) => {
@@ -58,20 +42,20 @@ function App() {
           >
             Home
           </Link>
-          <Link className="links" to="/Create">
-            Create
+          <Link className="links" to="/Matches">
+            Matches
           </Link>
-          <Link className="links" to="/Read">
-            Read
+          <Link className="links" to="/LogIn">
+            Login
           </Link>
-          <Link className="links" to="/Update">
-            Update
+          <Link className="links" to="/LogOut">
+            Logout
           </Link>
-          <Link className="links" to="/Delete">
-            Delete
+          <Link className="links" to="/SignUp">
+            Signup
           </Link>
         </nav>
-      )}
+      
       <Outlet />
       <button
         onClick={(e) => {

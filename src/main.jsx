@@ -7,15 +7,19 @@ import FetchCreateForm from "./components/FetchCreateForm";
 import FetchRead from "./components/FetchRead";
 import FetchUpdate from "./components/FetchUpdate";
 import FetchDelete from "./components/FetchDelete";
+import LogOut from "./components/LogOut";
+import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp";
+import Matches from "./components/Matches";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/Create" element={<FetchCreateForm />}></Route>
-        <Route path="/Read" element={<FetchRead />}></Route>
-        <Route path="/Update" element={<FetchUpdate />}></Route>
-        <Route path="/Delete" element={<FetchDelete />}></Route>
+        <Route path="/LogIn" element={<LogIn />}></Route>
+        <Route path="/LogOut" element={<LogOut />}></Route>
+        <Route path="/SignUp" element={<SignUp />}></Route>
+        <Route path="/Matches" element={<Matches />}></Route>
       </Route>
       <Route
         // default for when the link is wrong
